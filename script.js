@@ -21,7 +21,7 @@ function mostrarTarefas() {
         novaLi = novaLi + `
         <li class="tarefas ${item.concluida && "feito"}">
           <img class="img img-check" src="imagem/check.png" alt="Check" onclick="concluirTarefa(${index})">
-              <p>${item.tarefa}</p>
+              <p contenteditable="true" >${item.tarefa}</p>
               <img class="img img-lixeira" src="imagem/lixeira.png" alt="lixeira" onclick="deletarItem(${index})" >
               </li>
               `
