@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Cadastre-se</title>
+</head>
+
+<body>
+    <main class="container">
+
+        <div class="btns-form">
+            <div class="btn-color"></div>
+            <button id="btnLogin" class="btns">Login</button>
+            <button id="btnCad" class="btns">Cadastre-se</button>
+
+        </div>
+
+        <form action="login" id="login">
+            <div>
+                <input type="text" placeholder="Email" required>
+            </div>
+            <div>
+                <input type="password" placeholder="Senha" required>
+            </div>
+            <button class="btn-login" type="submit">Login</button>
+        </form>
+
+        <form action="cadastro" id="cadastro">
+            <div>
+
+                <input type="text" name="user" id="user" placeholder="Nome" class="input input-name" required>
+            </div>
+
+            <div>
+
+
+                <input type="email" name="email" id="email" placeholder="E-mail" class="input input-email" required>
+            </div>
+
+            <div>
+
+                <input type="password" name="senha" id="senha" class="input input-senha" placeholder="senha" required>
+            </div>
+
+            <div class="btn">
+                <button class="btn-cad" type="submit">Cadastre-se</button>
+            </div>
+
+           
+        </form>
+    </main>
+
+</body>
+<script src="script.js"></script>
+
+</html>

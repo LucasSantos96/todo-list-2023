@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+    background-color:#3ad8849d;
+    background-image: url(../imagem/bg/hand-drawn-woman-checking-giant-check-list-background.png);
+    background-position: right center;
+    background-size: 800px;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.container{
+    border:1px solid #11111113;
+    background-color: #ffffff74;
+    padding: 6px;
+    width: 350px;
+    height: 450px;
+    border-radius: 12px; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 10px 10px 20px -15px rgba(0, 0, 0, 0.132);
+    position: relative;
+    
+
+}
+form{
+    position: absolute;
+    margin-top: 80px;
+    transition: .5s;
+    width: 300px;
+    height: 400px;
+}
+.btns-form{
+    position: relative;
+    margin-top: 40px;
+    border-radius: 30px;
+    box-shadow: 0 0 7px 0 #2dc373;
+    
+
+}
+.btns{
+  
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 10px 25px;
+
+}
+.btn-color{
+    position: absolute;
+    width: 108px;
+    height: 100%;
+    background: linear-gradient(to right, #22cb71d9, #75c49ad9 );
+    border-radius: 30px;
+    transition: .3s;
+    cursor: pointer;   
+}
+input[ type="text"], input[ type="password"],input[type="email"]{
+    border: none;
+    margin-top: 40px;
+    border-radius: 60px;
+    padding: 12px 0 12px 35px;
+    outline: none;
+    width: 100%;
+    box-shadow: 10px 10px 20px -15px rgba(0, 0, 0, 0.454);
+    font-size: 15px;
+
+}
+button[ type="submit"]{
+    background-color:#3ad884e3 ;
+    color: #fff;
+    border-radius: 30px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px 15px;
+    font-size: 15px;
+    margin-top: 40px;
+    box-shadow: 0 0 7px 0 #2dc37390;
+    font-weight: bold;
+    cursor: pointer;
+    
+
+}
+
+@media(max-width:1024px) {
+    body{
+        background-size: 400px;
+    }
+    
+}
+
+@media(max-width:800px) {
+    body{
+        background-size: 300px;
+        background-position: top;
+    }
+    .container{
+        margin-top: 205px;
+    }
+    
+}
