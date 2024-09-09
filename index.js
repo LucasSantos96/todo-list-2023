@@ -69,7 +69,7 @@ formLogin.addEventListener('submit', function(e){
    if (userData.senha === senha) {
     alert('Login realizado com sucesso!');
     // Redirecionar para a página da todo list
-    window.location.href = '../todolist/todolist.html';
+    window.location.href = './todolist/todolist.html';
 } else {
     alert('Senha incorreta!');
 }
