@@ -4,24 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To do-list</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="imagem/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="login.css">
+    <title>Bem vindo a TodoList
+        
+    </title>
 </head>
 
 <body>
-    <section class="container">
+    <main class="container">
 
-        <input class="input-tarefa" placeholder="Adcione sua tarefa" type="text">
+        <div class="btns-form">
+            <div class="btn-color"></div>
+            <button id="btnLogin" class="btns">Login</button>
+            <button id="btnCad" class="btns">Cadastre-se</button>
 
-        <button class="button-adc">Adicionar</button>
+        </div>
 
-        <ul class="lista">
+        <form action="login" id="login">
+            <div>
+                <input type="email" placeholder="Email" id="emailLogin" required>
+            </div>
+            <div>
+                <input type="password" placeholder="Senha" id="senhaLogin" required>
+            </div>
+            <button class="btn-login" type="submit">Login</button>
+        </form>
 
-        </ul>
+        <form action="cadastro" id="cadastro">
+            <div>
 
-    </section>
-    <script src="script.js"></script>
+                <input type="text" name="user" id="user" placeholder="Nome" class="input input-name" required>
+            </div>
+
+            <div>
+
+
+                <input type="email" name="email" id="email" placeholder="E-mail" class="input input-email" required>
+            </div>
+
+            <div>
+
+                <input type="password" name="senha" id="senha" class="input input-senha" placeholder="senha" required>
+
+                <input type="password" id="confirmSenha" placeholder="Confirme a Senha" class="input input-senha" required>
+            </div>
+
+            <div class="btn">
+                <button class="btn-cad" type="submit">Cadastre-se</button>
+            </div>
+
+           
+        </form>
+    </main>
+
 </body>
+<script src="index.js"></script>
 
 </html>

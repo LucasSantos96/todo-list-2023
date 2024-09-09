@@ -27,7 +27,7 @@ body {
     background-color: #ffffff74;
     padding: 6px;
     width: 350px;
-    height: 450px;
+    height: 500px;
     border-radius: 12px; 
     display: flex;
     align-items: center;
@@ -72,7 +72,7 @@ form{
 }
 input[ type="text"], input[ type="password"],input[type="email"]{
     border: none;
-    margin-top: 40px;
+    margin-top: 35px;
     border-radius: 60px;
     padding: 12px 0 12px 35px;
     outline: none;
@@ -81,6 +81,8 @@ input[ type="text"], input[ type="password"],input[type="email"]{
     font-size: 15px;
 
 }
+
+
 button[ type="submit"]{
     background-color:#3ad884e3 ;
     color: #fff;
