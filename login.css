@@ -12,7 +12,7 @@
 
 body {
     background-color:#3ad8849d;
-    background-image: url(../imagem/bg/hand-drawn-woman-checking-giant-check-list-background.png);
+    background-image: url(./imagem/bg/hand-drawn-woman-checking-giant-check-list-background.png);
     background-position: right center;
     background-size: 800px;
     background-repeat: no-repeat;
@@ -22,6 +22,7 @@ body {
     justify-content: center;
 
 }
+
 .container{
     border:1px solid #11111113;
     background-color: #ffffff74;
@@ -45,6 +46,17 @@ form{
     width: 300px;
     height: 400px;
 }
+#cadastro {
+    position: absolute;
+    left: 450px;  /* Fora da tela inicialmente */
+    transition: left 0.5s ease;
+}
+
+#login {
+    position: absolute;
+    left: 25px;  /* Visível inicialmente */
+    transition: left 0.5s ease;
+}
 .btns-form{
     position: relative;
     margin-top: 40px;
@@ -59,11 +71,12 @@ form{
     background: transparent;
     border: none;
     padding: 10px 25px;
+    color:#111;
 
 }
 .btn-color{
     position: absolute;
-    width: 108px;
+    width: 103px;
     height: 100%;
     background: linear-gradient(to right, #22cb71d9, #75c49ad9 );
     border-radius: 30px;
